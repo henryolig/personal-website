@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Greeting from './components/Greeting'
-import Navvy from './Navvy';
+import Greeting from '../components/Greeting'
+import Navvy from '../navvy/Navvy';
 
 
 const Hobbies = () => {

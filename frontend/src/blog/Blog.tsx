@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import Navvy from './Navvy';
+import Navvy from '../navvy/Navvy';
 
-const Work = () => {
+const Blog = () => {
 
 
   return (
     <div>
       <Navvy></Navvy>
-      <p>AAAH</p>
+      <p>MY BLOG</p>
     </div>
   );
 }
 
-export default Work;
+export default Blog;

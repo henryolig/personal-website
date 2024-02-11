@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
-import Work from './work-experience'
+import Work from './mywork/work-experience'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Hobbies from './Hobbies'
-import Navvy from './Navvy';
+import Hobbies from './hobbies/Hobbies'
+import Navvy from './navvy/Navvy';
+import Blog from './blog/Blog'
 
 
 const root = ReactDOM.createRoot(
@@ -21,7 +22,8 @@ root.render(
           <Route path="/" element={<App />} />
           <Route path="/work-experience" element={<Work/>} />
           <Route path="/hobbies" element={<Hobbies/>} />
-      </Routes>
+          <Route path="/blog" element={<Blog/>} />
+        </Routes>
       </Router>
     </ChakraProvider>
   </React.StrictMode>
@@ -30,4 +32,4 @@ root.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();

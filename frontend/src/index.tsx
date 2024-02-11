@@ -7,7 +7,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import Work from './mywork/work-experience'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Hobbies from './hobbies/Hobbies'
-import Navvy from './navvy/Navvy';
+import Navvy from './components/Navvy';
 import Blog from './blog/Blog'
 
 

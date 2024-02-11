@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import Navvy from '../navvy/Navvy';
+import Navvy from '../components/Navvy';
 
 const Blog = () => {
 

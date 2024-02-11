@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Greeting from './components/Greeting'
 import { Center } from '@chakra-ui/layout';
-import Navvy from './navvy/Navvy'
+import Navvy from './components/Navvy'
 
 const App = () => {
 

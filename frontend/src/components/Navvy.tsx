@@ -8,7 +8,7 @@ import ActiveWorkBtn from '../images/activeWorkBtn.png'
 import ActiveAbtBtn from '../images/activeAbtMeBtn.png'
 import ActiveBlogBtn from '../images/activeBlogBtn.png'
 import Olig from '../images/olig.png'
-import { Image, Container, Center } from '@chakra-ui/react'
+import { Image, Container, Center, Img } from '@chakra-ui/react'
 import MeDrawing from '../images/icon.png'
 
 

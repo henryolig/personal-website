@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Greeting.css';
 import { Link } from 'react-router-dom';
-import { Image, Container, Center } from '@chakra-ui/react'
+import { Image, Container, Center, Img } from '@chakra-ui/react'
 import NameImg from '../images/myname.png'
 import BlogBtn from '../images/blogbtn.png'
 import WorkBtn from '../images/myworkbtn.png'
@@ -29,7 +29,7 @@ const App = () => {
                         <h4>HENRY [AT] OLIG [DOT] DEV</h4> */}
                         <div className='senders'>
                             <Link id='homehobbylink' to='/about-me'>
-                            <Image src={aboutimage}
+                            <Img src={aboutimage}
                                 onMouseEnter={() => setAboutImage(ActiveAbtBtn)}
                                 onMouseOut={() => setAboutImage(AboutBtn)}
                                 width='20vw'
@@ -40,7 +40,7 @@ const App = () => {
                             />
                             </Link>
                             <Link id='homeworklink' to='/work-experience'>
-                            <Image src={workimage}
+                            <Img src={workimage}
                                 onMouseEnter={() => setWorkImage(ActiveWorkBtn)}
                                 onMouseOut={() => setWorkImage(WorkBtn)}
                                 width='16vw'
@@ -52,7 +52,7 @@ const App = () => {
                             />
                             </Link>
                             <Link id='homebloglink' to='/blog'>
-                            <Image src={blogimage}
+                            <Img src={blogimage}
                                 onMouseEnter={() => setBlogImage(ActiveBlogBtn)}
                                 onMouseOut={() => setBlogImage(BlogBtn)}
                                 width='10.5vw'

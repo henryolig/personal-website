@@ -28,7 +28,7 @@ const App = () => {
                         {/* <h4>CS [AT] UNIVERSITY OF MINNESOTA</h4>
                         <h4>HENRY [AT] OLIG [DOT] DEV</h4> */}
                         <div className='senders'>
-                            <Link to='/hobbies'>
+                            <Link id='hobbylink' to='/hobbies'>
                             <Image src={aboutimage}
                                 onMouseEnter={() => setAboutImage(ActiveAbtBtn)}
                                 onMouseOut={() => setAboutImage(AboutBtn)}
@@ -39,7 +39,7 @@ const App = () => {
                                 cursor='pointer'
                             />
                             </Link>
-                            <Link to='/work-experience'>
+                            <Link id='worklink' to='/work-experience'>
                             <Image src={workimage}
                                 onMouseEnter={() => setWorkImage(ActiveWorkBtn)}
                                 onMouseOut={() => setWorkImage(WorkBtn)}
@@ -51,7 +51,7 @@ const App = () => {
                                 cursor='pointer'
                             />
                             </Link>
-                            <Link to='/blog'>
+                            <Link id='bloglink' to='/blog'>
                             <Image src={blogimage}
                                 onMouseEnter={() => setBlogImage(ActiveBlogBtn)}
                                 onMouseOut={() => setBlogImage(BlogBtn)}
@@ -61,12 +61,11 @@ const App = () => {
                                 mr='auto'
                                 mt='1vh'
                                 cursor='pointer'
-                                mb='10vh'
                             />
                             </Link>
                         </div>
                     </Container>
-                <Image minW='250px' w='22vw' src={Bottom} ml='auto' mr='auto'/>
+                <Image mt='10vh' minW='250px' w='22vw' src={Bottom} ml='auto' mr='auto'/>
             </div>
         </Center>
     );

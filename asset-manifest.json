@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/henryolig/personal-website/static/css/main.59244288.css",
-    "main.js": "/henryolig/personal-website/static/js/main.2b9d431f.js",
-    "static/media/left.png": "/henryolig/personal-website/static/media/left.be6f7c225fc9fe75470e.png",
-    "static/media/right.png": "/henryolig/personal-website/static/media/right.0b0e22347985dd48f5fb.png",
-    "static/media/myname.png": "/henryolig/personal-website/static/media/myname.37d328ec3e38978d20d4.png",
-    "static/media/myworkbtn.png": "/henryolig/personal-website/static/media/myworkbtn.35e0fe086f2f981933bb.png",
-    "static/media/blogbtn.png": "/henryolig/personal-website/static/media/blogbtn.3365e2e57979a12fd7a6.png",
-    "static/media/bottom.png": "/henryolig/personal-website/static/media/bottom.157379c28d2aa98f74a7.png",
-    "static/media/aboutmebtn.png": "/henryolig/personal-website/static/media/aboutmebtn.a68761a13dc88333e09f.png",
-    "static/media/activeBlogBtn.png": "/henryolig/personal-website/static/media/activeBlogBtn.cca364daf30f451db493.png",
-    "static/media/activeWorkBtn.png": "/henryolig/personal-website/static/media/activeWorkBtn.2fe01bee0e9702d0a0f6.png",
-    "static/media/medrawing1.png": "/henryolig/personal-website/static/media/medrawing1.7e7986a9f46113f1f930.png",
-    "static/media/activeAbtMeBtn.png": "/henryolig/personal-website/static/media/activeAbtMeBtn.80c3707c22402949bcda.png",
-    "static/media/top.png": "/henryolig/personal-website/static/media/top.6d6d8fab51d982f09ee8.png",
-    "index.html": "/henryolig/personal-website/index.html",
-    "main.59244288.css.map": "/henryolig/personal-website/static/css/main.59244288.css.map",
-    "main.2b9d431f.js.map": "/henryolig/personal-website/static/js/main.2b9d431f.js.map"
+    "main.css": "/personal-website/static/css/main.59244288.css",
+    "main.js": "/personal-website/static/js/main.6273bf92.js",
+    "static/media/left.png": "/personal-website/static/media/left.be6f7c225fc9fe75470e.png",
+    "static/media/right.png": "/personal-website/static/media/right.0b0e22347985dd48f5fb.png",
+    "static/media/myname.png": "/personal-website/static/media/myname.37d328ec3e38978d20d4.png",
+    "static/media/myworkbtn.png": "/personal-website/static/media/myworkbtn.35e0fe086f2f981933bb.png",
+    "static/media/blogbtn.png": "/personal-website/static/media/blogbtn.3365e2e57979a12fd7a6.png",
+    "static/media/bottom.png": "/personal-website/static/media/bottom.157379c28d2aa98f74a7.png",
+    "static/media/aboutmebtn.png": "/personal-website/static/media/aboutmebtn.a68761a13dc88333e09f.png",
+    "static/media/activeBlogBtn.png": "/personal-website/static/media/activeBlogBtn.cca364daf30f451db493.png",
+    "static/media/activeWorkBtn.png": "/personal-website/static/media/activeWorkBtn.2fe01bee0e9702d0a0f6.png",
+    "static/media/medrawing1.png": "/personal-website/static/media/medrawing1.7e7986a9f46113f1f930.png",
+    "static/media/activeAbtMeBtn.png": "/personal-website/static/media/activeAbtMeBtn.80c3707c22402949bcda.png",
+    "static/media/top.png": "/personal-website/static/media/top.6d6d8fab51d982f09ee8.png",
+    "index.html": "/personal-website/index.html",
+    "main.59244288.css.map": "/personal-website/static/css/main.59244288.css.map",
+    "main.6273bf92.js.map": "/personal-website/static/js/main.6273bf92.js.map"
   },
   "entrypoints": [
     "static/css/main.59244288.css",
-    "static/js/main.2b9d431f.js"
+    "static/js/main.6273bf92.js"
   ]
 }

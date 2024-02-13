@@ -33,7 +33,7 @@ const Navvy = () => {
               </Link>
             
               <Link id='worklink' to='/work-experience'>
-                <Image src={workimage}
+                <Img src={workimage}
                   onMouseEnter={() => setWorkImage(ActiveWorkBtn)}
                   onMouseOut={() => setWorkImage(WorkBtn)}
                   width='11.5vw'
@@ -46,7 +46,7 @@ const Navvy = () => {
               </Link>
            
             <Link id='hobbylink' to='/about-me'>
-              <Image src={aboutimage}
+              <Img src={aboutimage}
                 onMouseEnter={() => setAboutImage(ActiveAbtBtn)}
                 onMouseOut={() => setAboutImage(AboutBtn)}
                 width='15vw'
@@ -56,18 +56,18 @@ const Navvy = () => {
               />
             </Link>
         
-              <Link id='bloglink' to='/blog'>
-                <Image src={blogimage}
-                    onMouseEnter={() => setBlogImage(ActiveBlogBtn)}
-                    onMouseOut={() => setBlogImage(BlogBtn)}
-                    width='8vw'
-                    minW='66px'
-                    ml='auto'
-                    mr='auto'
-                    mt='1vh'
-                    cursor='pointer'
-                />
-              </Link>
+            <Link id='bloglink' to='/blog'>
+              <Img src={blogimage}
+                  onMouseEnter={() => setBlogImage(ActiveBlogBtn)}
+                  onMouseOut={() => setBlogImage(BlogBtn)}
+                  width='8vw'
+                  minW='66px'
+                  ml='auto'
+                  mr='auto'
+                  mt='1vh'
+                  cursor='pointer'
+              />
+            </Link>
             </Container>
         <hr />
       </div>

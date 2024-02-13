@@ -16,27 +16,6 @@ header {
   margin-bottom: 20px;
 }
 
-nav {
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 2vw;
-}
-
-li {
-  display: inline-block;
-  margin-right: 10px;
-  padding-left: 3vw;
-  padding-right: 3vw;
-}
-
-
-
-
 
 hr {
   border: 1px solid #333;
@@ -46,4 +25,30 @@ hr {
 p {
   font-size: 16px;
   line-height: 1.6;
+}
+
+#homelink {
+  width: 5vw;
+  min-width: 75px;
+  margin: 0;
+  margin-left: 8vw;
+}
+
+#hobbylink {
+  width:15vw;
+  min-width:150px;
+  margin: 0;
+}
+
+#bloglink {
+  width:8vw;
+  min-width: 66px;
+  margin: 0;
+  margin-right: 8vw;
+}
+
+#worklink {
+  width:11.5vw;
+  min-width:90px;
+  margin: 0;
 }

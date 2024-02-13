@@ -12,7 +12,7 @@ const Hobbies = () => {
       <Navvy></Navvy>
       <div className='pagebody'>
         <div className='greeting'>
-          <h1>This is what I like to do</h1>
+          <h1>:3</h1>
         </div>
       </div>
       </div>

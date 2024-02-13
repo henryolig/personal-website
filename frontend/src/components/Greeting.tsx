@@ -21,14 +21,14 @@ const App = () => {
         <Center ml='auto' mr='auto' minW='400px' justifyContent='space-between' h='100vh' w="25vw" rounded='md' pt='0' mt='0'>
             <div className='greeting'>
                 <Image minW='175px' w='15vw' src={Top} ml='auto' mr='auto' />
-                    <Container m='0' minW='25vw' color='#eefff' className='GreetContainer' p='0'>
+                    <Container justifyContent='center' m='0' minW='25vw' color='#eefff' className='GreetContainer' p='0'>
                     <Image minW='150px' maxW='700px' w='20vw' src={MeDrawing} ml='auto' mr='auto' />
                         {/* <h4>Hello, my name is</h4> */}
                         <Image minW='275px' mb='5vh' className='name' src={NameImg} alt='Henry Olig'></Image>
                         {/* <h4>CS [AT] UNIVERSITY OF MINNESOTA</h4>
                         <h4>HENRY [AT] OLIG [DOT] DEV</h4> */}
                         <div className='senders'>
-                            <Link id='hobbylink' to='/hobbies'>
+                            <Link id='homehobbylink' to='/about-me'>
                             <Image src={aboutimage}
                                 onMouseEnter={() => setAboutImage(ActiveAbtBtn)}
                                 onMouseOut={() => setAboutImage(AboutBtn)}
@@ -39,7 +39,7 @@ const App = () => {
                                 cursor='pointer'
                             />
                             </Link>
-                            <Link id='worklink' to='/work-experience'>
+                            <Link id='homeworklink' to='/work-experience'>
                             <Image src={workimage}
                                 onMouseEnter={() => setWorkImage(ActiveWorkBtn)}
                                 onMouseOut={() => setWorkImage(WorkBtn)}
@@ -51,7 +51,7 @@ const App = () => {
                                 cursor='pointer'
                             />
                             </Link>
-                            <Link id='bloglink' to='/blog'>
+                            <Link id='homebloglink' to='/blog'>
                             <Image src={blogimage}
                                 onMouseEnter={() => setBlogImage(ActiveBlogBtn)}
                                 onMouseOut={() => setBlogImage(BlogBtn)}

@@ -10,7 +10,7 @@ const Blog = () => {
     <div>
         <Navvy></Navvy>
         <Container ml="3vw" mt='4vh' w="50vw">
-          <Text fontSize='9xl'>My Blog</Text>
+          <Text fontSize='9xl'>My Blog :3</Text>
         </Container>
     </div>
   );

@@ -7,6 +7,7 @@ import { Hide, Image, Show } from '@chakra-ui/react'
 import Sides from './images/sides.png'
 import Rside from './images/right.png'
 import Lside from './images/left.png'
+import FLside from './images/FirstLeft.png'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
     <div className='home' color='#eeffff'>
       <Hide below='lg'>
         <Image overflow='hidden' src={Lside} mr='auto' w='35vw' h='100vh' />
+        {/* <Image overflow='hidden' src={FLside} mr='auto' w='35vw' h='100vh' /> */}
       </Hide>
       <Greeting></Greeting>
       <Hide below='lg'>

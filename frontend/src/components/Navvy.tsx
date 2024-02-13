@@ -1,7 +1,6 @@
 import React from 'react';
 import './Navvy.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Greeting from './Greeting'
 
 
 const Navvy = () => {

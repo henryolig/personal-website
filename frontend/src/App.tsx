@@ -14,11 +14,11 @@ const App = () => {
   return (
     <div className='home' color='#eeffff'>
       <Hide below='lg'>
-        <Image src={Lside} mr='auto' w='35vw' h='100vh' />
+        <Image overflow='hidden' src={Lside} mr='auto' w='35vw' h='100vh' />
       </Hide>
       <Greeting></Greeting>
       <Hide below='lg'>
-        <Image src={Rside} ml='auto' w='35vw' h='100vh' />
+        <Image overflow='hidden' src={Rside} ml='auto' w='35vw' h='100vh' />
       </Hide>
     </div>
   );

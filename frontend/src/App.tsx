@@ -30,35 +30,38 @@ const App = () => {
         <div className='greeting'>
           <Greeting></Greeting>
           <div className='senders'>
-          <Image src={aboutimage}
-              onMouseEnter={() => setAboutImage(ActiveAbtBtn)}
-              onMouseOut={() => setAboutImage(AboutBtn)}
-              width='20vw'
-              ml='auto'
-              mr='auto'
-              cursor='pointer'
+            <Link to='/hobbies'>
+              <Image src={aboutimage}
+                onMouseEnter={() => setAboutImage(ActiveAbtBtn)}
+                onMouseOut={() => setAboutImage(AboutBtn)}
+                width='20vw'
+                ml='auto'
+                mr='auto'
+                cursor='pointer'
               />
-            <Image src={workimage}
-              onMouseEnter={() => setWorkImage(ActiveWorkBtn)}
-              onMouseOut={() => setWorkImage(WorkBtn)}
-              width='16vw'
-              ml='auto'
-              mr='auto'
-              mt='1vh'
-              cursor='pointer'
+            </Link>
+            <Link to='/work-experience'>
+              <Image src={workimage}
+                onMouseEnter={() => setWorkImage(ActiveWorkBtn)}
+                onMouseOut={() => setWorkImage(WorkBtn)}
+                width='16vw'
+                ml='auto'
+                mr='auto'
+                mt='1vh'
+                cursor='pointer'
               />
-            <Image src={blogimage}
-              onMouseEnter={() => setBlogImage(ActiveBlogBtn)}
-              onMouseOut={() => setBlogImage(BlogBtn)}
-              width='10vw'
-              ml='auto'
-              mr='auto'
-              mt='1vh'
-              cursor='pointer'
+            </Link>
+            <Link to='/blog'>
+              <Image src={blogimage}
+                onMouseEnter={() => setBlogImage(ActiveBlogBtn)}
+                onMouseOut={() => setBlogImage(BlogBtn)}
+                width='10vw'
+                ml='auto'
+                mr='auto'
+                mt='1vh'
+                cursor='pointer'
               />
-            <Link to='/hobbies'>About me</Link>
-            <Link to='/work-experience'>My work</Link>
-            <Link to='/blog'>Blog</Link>
+            </Link>
           </div>
         </div>
       </Center>

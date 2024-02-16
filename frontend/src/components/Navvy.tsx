@@ -20,57 +20,57 @@ const Navvy = () => {
 
   return (
     <div className="container">
-        <Container m='0' minW='100vw' display='flex' flexDir='row' justifyContent='space-around' alignContent='center'>
-            <Link id='homelink' to='/'>
-                <Image src={MeDrawing}
-                  width='5vw'
-                  minW='75px'
-                  ml='auto'
-                  mr='auto'
-                  mt='0.5vh'
-                  cursor='pointer'
-                />
-              </Link>
-            
-              <Link id='worklink' to='/work-experience'>
-                <Img src={workimage}
-                  onMouseEnter={() => setWorkImage(ActiveWorkBtn)}
-                  onMouseOut={() => setWorkImage(WorkBtn)}
-                  width='11.5vw'
-                  minW='90px'
-                  ml='auto'
-                  mr='auto'
-                  mt='1vh'
-                  cursor='pointer'
-                />
-              </Link>
-           
-            <Link id='hobbylink' to='/about-me'>
-              <Img src={aboutimage}
-                onMouseEnter={() => setAboutImage(ActiveAbtBtn)}
-                onMouseOut={() => setAboutImage(AboutBtn)}
-                width='15vw'
-                minW='120px'
-                mt='1vh'
-                cursor='pointer'
-              />
-            </Link>
-        
-            <Link id='bloglink' to='/blog'>
-              <Img src={blogimage}
-                  onMouseEnter={() => setBlogImage(ActiveBlogBtn)}
-                  onMouseOut={() => setBlogImage(BlogBtn)}
-                  width='8vw'
-                  minW='66px'
-                  ml='auto'
-                  mr='auto'
-                  mt='1vh'
-                  cursor='pointer'
-              />
-            </Link>
-            </Container>
-        <hr />
-      </div>
+      <Container m='0' minW='100vw' display='flex' flexDir='row' justifyContent='space-around' alignContent='center'>
+          <Link id='homelink' to='/'>
+            <Image src={MeDrawing}
+              width='5vw'
+              minW='75px'
+              ml='auto'
+              mr='auto'
+              mt='0.5vh'
+              cursor='pointer'
+            />
+          </Link>
+
+          <Link id='hobbylink' to='/about-me'>
+            <Img src={aboutimage}
+              onMouseEnter={() => setAboutImage(ActiveAbtBtn)}
+              onMouseOut={() => setAboutImage(AboutBtn)}
+              width='15vw'
+              minW='120px'
+              mt='1vh'
+              cursor='pointer'
+            />
+          </Link>
+          
+          <Link id='worklink' to='/work-experience'>
+            <Img src={workimage}
+              onMouseEnter={() => setWorkImage(ActiveWorkBtn)}
+              onMouseOut={() => setWorkImage(WorkBtn)}
+              width='11.5vw'
+              minW='90px'
+              ml='auto'
+              mr='auto'
+              mt='1vh'
+              cursor='pointer'
+            />
+          </Link>
+
+          <Link id='bloglink' to='/blog'>
+            <Img src={blogimage}
+              onMouseEnter={() => setBlogImage(ActiveBlogBtn)}
+              onMouseOut={() => setBlogImage(BlogBtn)}
+              width='8vw'
+              minW='66px'
+              ml='auto'
+              mr='auto'
+              mt='1vh'
+              cursor='pointer'
+            />
+          </Link>
+      </Container>
+      <hr />
+    </div>
     
   );
 }

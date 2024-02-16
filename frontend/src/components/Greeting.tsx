@@ -13,7 +13,7 @@ import Top from '../images/top.png'
 import MeDrawing from '../images/medrawing1.png'
 import Bottom from '../images/bottom.png'
 
-const App = () => {
+const Greeting = () => {
     const [workimage, setWorkImage] = useState(WorkBtn);
     const [aboutimage, setAboutImage] = useState(AboutBtn);
     const [blogimage, setBlogImage] = useState(BlogBtn);
@@ -65,10 +65,10 @@ const App = () => {
                             </Link>
                         </div>
                     </Container>
-                <Image mt='10vh' minW='250px' w='22vw' src={Bottom} ml='auto' mr='auto'/>
+                <Image mt='5vh' minW='250px' w='22vw' src={Bottom} ml='auto' mr='auto'/>
             </div>
         </Center>
     );
 }
 
-export default App;
+export default Greeting;

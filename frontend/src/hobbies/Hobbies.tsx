@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Greeting from '../components/Greeting'
 import Navvy from '../components/Navvy';
+import { Text } from '@chakra-ui/react'
 
 
 const Hobbies = () => {
@@ -12,7 +13,7 @@ const Hobbies = () => {
       <Navvy></Navvy>
       <div className='pagebody'>
         <div className='greeting'>
-          <h1>:3</h1>
+          <Text fontSize='9xl'>:3</Text>
         </div>
       </div>
       </div>

@@ -8,6 +8,7 @@ import Work from './mywork/work-experience'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Hobbies from './hobbies/Hobbies'
 import Blog from './blog/Blog'
+import E404 from './e404'
 
 
 const root = ReactDOM.createRoot(
@@ -22,6 +23,7 @@ root.render(
           <Route path="/work-experience" element={<Work/>} />
           <Route path="/about-me" element={<Hobbies/>} />
           <Route path="/blog" element={<Blog/>} />
+          <Route path="*" element={<E404/>}></Route>
         </Routes>
       </Router>
     </ChakraProvider>

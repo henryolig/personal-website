@@ -2,7 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Greeting from '../components/Greeting'
 import Navvy from '../components/Navvy';
-import { Text } from '@chakra-ui/react'
+import { Container, Text, Divider } from '@chakra-ui/react'
+import Reviews from './Reviews'
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+import Slideshow from './Slideshow';
 
 
 const Hobbies = () => {
@@ -11,13 +15,31 @@ const Hobbies = () => {
   return (
     <div>
       <Navvy></Navvy>
-      <div className='pagebody'>
-        <div className='greeting'>
-          <Text fontSize='9xl'>:3</Text>
-        </div>
-      </div>
-      </div>
-    
+      <Container minW='100vw' margin='0' padding='0' display='flex' flexDir='row' justifyContent={'space-between'} >
+        <Container minW='45vw' m='0' ml='2vw'>
+          <Text fontSize='9xl'>Welcome to my little internet corner</Text>
+          <Text fontSize='7xl' mb='2vh'>
+            I am known as the 
+            Socrates of our generation, except I don't know philosophy, but I know computers. 
+            Don't ask who calls me this, though, please just trust that many people are saying this. <br/>
+          </Text>
+          <hr/>
+          <Text mt='3vh' fontSize='8xl'>What I do 🙀</Text>
+          <Text fontSize='6xl'>
+            I'm a B.S Computer Science student at the University of Minnesota with an interest in 
+            Quantum Computing and Operating Systems, with an intention to begin and continue
+            research in these subjects beyond my collegiate years.
+            <br/><br/>
+            Outside of school, I am an avid sweater collector, and my pants cost me way too much.
+            I like playing Dungeons & Dragons and have been playing with my group for about 5 years.
+            My entire wallet has been emptied on Warhammer 40k miniatures and paint :((
+            
+          </Text>
+          {/* <Slideshow></Slideshow> */}
+        </Container>
+        <Reviews></Reviews>
+      </Container>
+    </div>
   );
 }
 

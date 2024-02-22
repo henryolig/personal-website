@@ -18,7 +18,7 @@ const Greeting = () => {
     const [aboutimage, setAboutImage] = useState(AboutBtn);
     const [blogimage, setBlogImage] = useState(BlogBtn);
     return(
-        <Center overflow='hidden' ml='auto' mr='auto' minW='400px' justifyContent='space-between' h='100svh' w="25vw" rounded='md' pt='0' mt='0'>
+        <Center overflow='hidden' ml='auto' mr='auto' minW='400px' justifyContent='space-between' h='100dvh' w="25vw" rounded='md' pt='0' mt='0'>
             <div className='greeting'>
                 <Image minW='175px' w='15vw' src={Top} ml='auto' mr='auto' />
                     <Container justifyContent='center' m='0' minW='25vw' color='#eefff' className='GreetContainer' p='0'>

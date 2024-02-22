@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Doves';
+    src: local('Doves'), url('../fonts/doves.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'SchoolBell';
+    src: local('SchoolBell'), url('../fonts/Schoolbell-Regular.ttf') format('truetype');
+  }

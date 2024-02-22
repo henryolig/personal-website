@@ -9,15 +9,8 @@ const Reviews = () => {
   return (
     <div>
       <Container m='0' minW='45vw' mt='10vh'>
-        <Text fontFamily={'SchoolBell'} color={'#451111'} fontSize='9xl'>Glowing customer reviews:</Text>
+        <Text fontFamily={'SchoolBell'} color={'#451111'} fontSize='3vw'>Glowing customer reviews:</Text>
         <Image src={TV} minW='40vw'/>
-        {/* <Text transform='auto' 
-          fontFamily={'SchoolBell'} 
-          fontSize={'8xl'} 
-          translateY={'-24vh'} 
-          translateX={'9vw'}>
-          Hello There
-        </Text> */}
       </Container>
     </div>
   );

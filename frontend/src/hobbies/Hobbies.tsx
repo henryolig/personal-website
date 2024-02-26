@@ -1,12 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Greeting from '../components/Greeting'
 import Navvy from '../components/Navvy';
 import { Container, Text, Divider } from '@chakra-ui/react'
 import Reviews from './Reviews'
-import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import Slideshow from './Slideshow';
 
 
 const Hobbies = () => {

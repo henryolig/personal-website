@@ -21,50 +21,47 @@ const Greeting = () => {
         <Center overflow='hidden' ml='auto' mr='auto' minW='400px' justifyContent='space-between' h='100dvh' w="25vw" rounded='md' pt='0' mt='0'>
             <div className='greeting'>
                 <Image minW='175px' w='15vw' src={Top} ml='auto' mr='auto' />
-                    <Container justifyContent='center' m='0' minW='25vw' color='#eefff' className='GreetContainer' p='0'>
-                    <Image minW='150px' maxW='700px' w='20vw' src={MeDrawing} ml='auto' mr='auto' />
-                        {/* <h4>Hello, my name is</h4> */}
-                        <Image minW='275px' mb='5vh' className='name' src={NameImg} alt='Henry Olig'></Image>
-                        {/* <h4>CS [AT] UNIVERSITY OF MINNESOTA</h4>
-                        <h4>HENRY [AT] OLIG [DOT] DEV</h4> */}
-                        <div className='senders'>
-                            <Link id='homehobbylink' to='/about-me'>
-                            <Img src={aboutimage}
-                                onMouseEnter={() => setAboutImage(ActiveAbtBtn)}
-                                onMouseOut={() => setAboutImage(AboutBtn)}
-                                width='20vw'
-                                minW='250px'
-                                ml='auto'
-                                mr='auto'
-                                cursor='pointer'
-                            />
-                            </Link>
-                            <Link id='homeworklink' to='/work-experience'>
-                            <Img src={workimage}
-                                onMouseEnter={() => setWorkImage(ActiveWorkBtn)}
-                                onMouseOut={() => setWorkImage(WorkBtn)}
-                                width='16vw'
-                                minW='195px'
-                                ml='auto'
-                                mr='auto'
-                                mt='1vh'
-                                cursor='pointer'
-                            />
-                            </Link>
-                            <Link id='homebloglink' to='/blog'>
-                            <Img src={blogimage}
-                                onMouseEnter={() => setBlogImage(ActiveBlogBtn)}
-                                onMouseOut={() => setBlogImage(BlogBtn)}
-                                width='10.5vw'
-                                minW='125px'
-                                ml='auto'
-                                mr='auto'
-                                mt='1vh'
-                                cursor='pointer'
-                            />
-                            </Link>
-                        </div>
-                    </Container>
+                <Container justifyContent='center' m='0' minW='25vw' color='#eefff' className='GreetContainer' p='0'>
+                    <Image minW='150px' maxW='700px' w='20vw' src={MeDrawing} ml='auto' mr='auto'/>
+                    <Image minW='275px' mb='5vh' className='name' src={NameImg} alt='Henry Olig'/>
+                    <div className='senders'>
+                        <Link id='homehobbylink' to='/about-me'>
+                        <Img src={aboutimage}
+                            onMouseEnter={() => setAboutImage(ActiveAbtBtn)}
+                            onMouseOut={() => setAboutImage(AboutBtn)}
+                            width='20vw'
+                            minW='250px'
+                            ml='auto'
+                            mr='auto'
+                            cursor='pointer'
+                        />
+                        </Link>
+                        <Link id='homeworklink' to='/work-experience'>
+                        <Img src={workimage}
+                            onMouseEnter={() => setWorkImage(ActiveWorkBtn)}
+                            onMouseOut={() => setWorkImage(WorkBtn)}
+                            width='16vw'
+                            minW='195px'
+                            ml='auto'
+                            mr='auto'
+                            mt='1vh'
+                            cursor='pointer'
+                        />
+                        </Link>
+                        <Link id='homebloglink' to='/blog'>
+                        <Img src={blogimage}
+                            onMouseEnter={() => setBlogImage(ActiveBlogBtn)}
+                            onMouseOut={() => setBlogImage(BlogBtn)}
+                            width='10.5vw'
+                            minW='125px'
+                            ml='auto'
+                            mr='auto'
+                            mt='1vh'
+                            cursor='pointer'
+                        />
+                        </Link>
+                    </div>
+                </Container>
                 <Image mt='5vh' minW='250px' w='22vw' src={Bottom} ml='auto' mr='auto'/>
             </div>
         </Center>

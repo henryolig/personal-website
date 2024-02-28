@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 
 function GetTime() {
-
-
     const [serious, setSeriousness] = useState(false);
     useEffect(() => {
     let d = new Date();
@@ -17,4 +15,4 @@ function GetTime() {
     return (serious);
 }
 
-export default GetTime ;
+export default GetTime;

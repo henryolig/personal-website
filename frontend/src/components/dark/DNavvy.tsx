@@ -3,12 +3,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Container, Text, Divider } from '@chakra-ui/react';
 // import './DNavvy.css'
 
-const textColor = "#ebebeb";
-const activeColor = "linear-gradient(90deg, rgba(82,0,129,1) 0%, rgba(141,0,195,1) 35%, rgba(199,0,212,1) 100%)";
-const testColor = "#121212";
-const anothertestcol = "linear(to-l, #7928CA, #FF0080)";
-const whyyyyy = "gray.800";
-
+const gradientCol = "linear(to-l, #7928CA, #FF0080)";
+const baseColor = "#ebebeb";
 
 interface NavLink {
     location: string,
@@ -17,9 +13,9 @@ interface NavLink {
 const LinkEle = ({ location, text }: NavLink) => {
     return(
     <Link to={location}>
-    <Text fontSize="2vw" color="gray.50" fontWeight="bold"
-    _hover={{color:anothertestcol,
-    bgGradient:"linear(to-l, pink.300, purple.500)", // Define your gradient here
+    <Text fontSize="2vw" color={baseColor} fontWeight="bold"
+    _hover={{color:gradientCol,
+    bgGradient:"linear(to-l, pink.300, purple.500)",
     bgClip:"text"}}>
         {text}</Text>
     </Link>
@@ -43,7 +39,6 @@ const links: NavLink[] = [
         text: "Blog"
     }
 ];
-
 
 const DNavvy = () => {
   return (

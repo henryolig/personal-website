@@ -13,7 +13,9 @@ const Hobbies = () => {
     return (
       <Container p='0' m='0' minW='100vw' h='100vh' bg='#121212'>
         <DNavvy/>
-        <Text color="#ebebeb" fontSize="3vw" onClick={() => toggleMode()}>About me</Text>
+        <Container bgColor="#121212" p='0' m='0' pl='5vw' minW='90vw'>
+          <Text color="#ebebeb" fontWeight='Bold' fontSize="3vw" onClick={() => toggleMode()}>About me</Text>
+        </Container>
       </Container>
     )
   }

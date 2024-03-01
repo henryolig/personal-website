@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import './App.css';
 import Greeting from './components/Greeting'
 import { Center } from '@chakra-ui/layout';
-import { Container, Divider, Hide, Image, Text } from '@chakra-ui/react'
+import { Container, Divider, Hide, Image, Slide, Text } from '@chakra-ui/react'
 import Rside from './images/right.png'
 import Lside from './images/left.png'
 // import Sides from './images/sides.png'
 // import FLside from './images/FirstLeft.png'
-import GetTime from './components/getTime';
 import internal from 'stream';
 import DNavvy from './components/dark/DNavvy';
 import { useMode } from './context/ModeContext';
+import Navvy from './components/Navvy';
 
 interface datas {
   name: string,
@@ -53,16 +53,18 @@ const info: datas[] = [
 
 const App = () => {
   const { mode, toggleMode } = useMode();
-  if(mode) {
+  if(!mode) {
     return (
       <Container m='0' p='0' minW='100vw' minH='100vh' bgColor='#121212'>
         <DNavvy/>
-        <Center pt='10vh' bg='#121212' flexDir='column'>
-            <Text fontWeight="Bold" fontSize='8vw' color='#ebebeb' w='max-content' onClick={() => toggleMode()}>Hi,</Text>
+        <Container m='0' pl='6vw' pt='10vh' minW='90vw' bg='#121212' flexDir='column'>
+            {/* <Text fontWeight="Bold" fontSize='8vw' color='#ebebeb' w='max-content' onClick={() => toggleMode()}>Hi,</Text> */}
             <Text fontWeight="Bold" fontSize='8vw' color='#ebebeb' w='max-content'
             bgGradient="linear(to-l, pink.300, purple.500)"
-            bgClip="text">I'm Henry</Text>
-        </Center>
+            bgClip="text">Henry</Text>
+            <Text color='#ebebeb' fontWeight="Bold" fontSize='1.5vw'>HENRY [AT] OLIG [DOT] DEV</Text>
+            <Text color='#ebebeb' fontWeight="Bold" fontSize='1.5vw'>CS @ UMN</Text>
+        </Container>
         <Divider p='0' m='0' pt="20vh" color="#ebebeb"/>
         <Container pt='3vh' bg='#121212' display="flex" flex="row" minW='80vw'>
           {info.map((datas, i) => (

@@ -1,5 +1,16 @@
 import React, { createContext, useContext, useState } from 'react';
-import GetTime from '../components/getTime';
+
+function GetTime() {
+    let d = new Date();
+    let time = d.getHours();
+    console.log(time);
+    if (time < 9 || time > 16) {
+        return(false);
+    }
+    else {
+        return(true);
+    }
+}
 
 interface ModeContextType {
     mode: boolean;
@@ -18,6 +29,8 @@ export function useMode() {
 
 export function ModeProvider({ children }: { children: React.ReactNode}) {
   const [mode, setMode] = useState(!GetTime());
+  console.log("Hlelloo?");
+  console.log(GetTime());
 
   const toggleMode = () => {
     setMode((prevMode) => (prevMode === true ? false : true));

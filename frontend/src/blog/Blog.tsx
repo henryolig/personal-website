@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import Navvy from '../components/Navvy';
 import './Blog.css';
 import { Container, Text } from '@chakra-ui/layout';
-import GetTime from '../components/getTime';
+import { useMode } from '../context/ModeContext';
 
 const Blog = () => {
-  const [serious, setSeriousness] = useState(!GetTime());
-  if (!serious) {
+  const {mode, toggleMode} = useMode();
+  if (!mode) {
     return (
       <div>
         <Navvy></Navvy>

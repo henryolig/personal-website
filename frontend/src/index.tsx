@@ -9,7 +9,6 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Hobbies from './hobbies/Hobbies'
 import Blog from './blog/Blog'
 import E404 from './e404'
-import GetTime from './components/getTime';
 import {ModeProvider} from './context/ModeContext'
 
 

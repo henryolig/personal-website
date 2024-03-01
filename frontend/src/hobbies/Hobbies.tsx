@@ -9,12 +9,17 @@ import DNavvy from '../components/dark/DNavvy';
 
 const Hobbies = () => {
   const { mode, toggleMode } = useMode();
-  if(mode) {
+  if(!mode) {
     return (
       <Container p='0' m='0' minW='100vw' h='100vh' bg='#121212'>
         <DNavvy/>
         <Container bgColor="#121212" p='0' m='0' pl='5vw' minW='90vw'>
           <Text color="#ebebeb" fontWeight='Bold' fontSize="3vw" onClick={() => toggleMode()}>About me</Text>
+          <Text color="#ebebeb" fontWeight='Bold' fontSize="1.5vw" onClick={() => toggleMode()}>
+          Hello. I'm Henry, a Software Engineer based in Minneapolis. 
+          I'm passionate about creating change through software.
+          I believe in [Brief Statement of Your Professional Philosophy or Values].
+          </Text>
         </Container>
       </Container>
     )

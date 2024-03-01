@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Container, Text, Divider } from '@chakra-ui/react';
+import { useMode } from '../../context/ModeContext';
 // import './DNavvy.css'
 
 const gradientCol = "linear(to-l, #7928CA, #FF0080)";
@@ -41,6 +42,7 @@ const links: NavLink[] = [
 ];
 
 const DNavvy = () => {
+    const {mode, toggleMode} = useMode();
   return (
     <Container m='0' p='0' minW='100vw' display="flex" flexDir={"column"}>
         <Container justifyContent='space-around' alignContent='center'
@@ -50,6 +52,12 @@ const DNavvy = () => {
             {links.map((NavLink, i) => (
                 <LinkEle key={i} location={NavLink.location} text={NavLink.text} />
             ))}
+            <Text fontSize="2vw" color={baseColor} fontWeight="bold" onClick={() => toggleMode()}
+                cursor='pointer'
+                _hover={{color:gradientCol,
+                bgGradient:"linear(to-l, pink.300, purple.500)",
+                bgClip:"text"}}>
+                    Click me!</Text>
         </Container>
         <Divider p='0' m='0' color="#ebebeb"/>
     </Container>

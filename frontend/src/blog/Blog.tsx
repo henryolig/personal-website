@@ -3,17 +3,18 @@ import Navvy from '../components/Navvy';
 import './Blog.css';
 import { Container, Text } from '@chakra-ui/layout';
 import { useMode } from '../context/ModeContext';
+import DNavvy from '../components/dark/DNavvy';
 
 const Blog = () => {
   const {mode, toggleMode} = useMode();
   if (!mode) {
     return (
-      <div>
-        <Navvy></Navvy>
-        <Container ml="3vw" mt='4vh' w="50vw" bg='#000000'>
-          <Text fontSize='9xl'>My Blog :)</Text>
+      <Container m='0' p='0' bg='#121212' minW='100vw' h='100vh'>
+        <DNavvy></DNavvy>
+        <Container ml="3vw" mt='4vh' w="50vw" bg='#121212'>
+          <Text fontSize='9xl' color='#ebebeb'>My Blog :)</Text>
         </Container>
-      </div>
+      </Container>
     );
   }
   else {

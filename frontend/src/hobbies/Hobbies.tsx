@@ -13,12 +13,22 @@ const Hobbies = () => {
     return (
       <Container p='0' m='0' minW='100vw' h='100vh' bg='#121212'>
         <DNavvy/>
-        <Container bgColor="#121212" p='0' m='0' pl='5vw' minW='90vw'>
+        <Container bgColor="#121212" p='0' pt='3vw' m='0' pl='5vw' minW='90vw'>
           <Text color="#ebebeb" fontWeight='Bold' fontSize="3vw" onClick={() => toggleMode()}>About me</Text>
-          <Text color="#ebebeb" fontWeight='Bold' fontSize="1.5vw" onClick={() => toggleMode()}>
+          <Text color="#ebebeb" pt='2vh' w='40vw' fontSize="1.25vw">
           Hello. I'm Henry, a Software Engineer based in Minneapolis. 
           I'm passionate about creating change through software.
-          I believe in [Brief Statement of Your Professional Philosophy or Values].
+          I thrive in environments that challenge me, value creativity, and foster a culture of 
+          collaboration and respect. <br/><br/> My goal is to [a broad professional or personal goal].
+          When I'm not [a general activity related to your interests or hobbies,
+           e.g., "exploring the great outdoors,"], you can find me 
+           [another activity or hobby, e.g., "practicing mindfulness and yoga," ].
+           <br/><br/>
+           I believe that [a personal philosophy or concluding statement, e.g., 
+          "life is a continuous journey of learning and growth,"].
+          Thank you for taking the time to get to know a bit about me. 
+          I'm always eager to connect, collaborate, and share ideas, so feel free to reach out through 
+          [preferred contact method] or follow me on [social media platforms].
           </Text>
         </Container>
       </Container>

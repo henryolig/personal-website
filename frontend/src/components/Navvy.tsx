@@ -8,7 +8,7 @@ import ActiveWorkBtn from '../images/activeWorkBtn.png'
 import ActiveAbtBtn from '../images/activeAbtMeBtn.png'
 import ActiveBlogBtn from '../images/activeBlogBtn.png'
 import Olig from '../images/olig.png'
-import { Image, Container, Center, Img } from '@chakra-ui/react'
+import { Image, Container, Img, Text } from '@chakra-ui/react'
 import MeDrawing from '../images/icon.png'
 import DNavvy from './dark/DNavvy';
 import { useMode } from '../context/ModeContext';
@@ -19,6 +19,8 @@ const Navvy = () => {
   const [aboutimage, setAboutImage] = useState(AboutBtn);
   const [blogimage, setBlogImage] = useState(BlogBtn);
 
+  const {mode, toggleMode} = useMode();
+  const gradientCol = "linear(to-l, #DBDBDB, #404040)";
 
   return (
     <div className="container">
@@ -70,6 +72,14 @@ const Navvy = () => {
               cursor='pointer'
             />
           </Link>
+
+          <Text fontSize="2vw" color={'#121212'} fontWeight="bold" onClick={() => toggleMode()}
+                mr='4vw'
+                cursor='pointer'
+                _hover={{color:gradientCol,
+                bgGradient:"linear(to-l, #404040, #CDCDCD)",
+                bgClip:"text"}}>
+                    Click me!</Text>
       </Container>
       <hr />
     </div>

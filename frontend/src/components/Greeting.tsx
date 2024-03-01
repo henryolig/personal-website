@@ -20,10 +20,10 @@ const Greeting = () => {
     return(
         <Center zIndex={1} overflow='hidden' ml='auto' mr='auto' minW='400px' justifyContent='space-between' h='100dvh' w="25vw" rounded='md' pt='0' mt='0'>
             <div className='greeting'>
-                <Image minW='175px' w='15vw' src={Top} ml='auto' mr='auto' />
+                <Img minW='175px' w='15vw' src={Top} ml='auto' mr='auto' />
                 <Container justifyContent='center' m='0' minW='25vw' color='#eefff' className='GreetContainer' p='0'>
-                    <Image minW='150px' maxW='700px' w='20vw' src={MeDrawing} ml='auto' mr='auto'/>
-                    <Image minW='275px' mb='5vh' className='name' src={NameImg} alt='Henry Olig'/>
+                    <Img minW='150px' maxW='700px' w='20vw' src={MeDrawing} ml='auto' mr='auto'/>
+                    <Img minW='275px' mb='5vh' className='name' src={NameImg} alt='Henry Olig'/>
                     <div className='senders'>
                         <Link id='homehobbylink' to='/about-me'>
                         <Img src={aboutimage}
@@ -62,7 +62,7 @@ const Greeting = () => {
                         </Link>
                     </div>
                 </Container>
-                <Image mt='5vh' minW='250px' w='22vw' src={Bottom} ml='auto' mr='auto'/>
+                <Img mt='5vh' minW='250px' w='22vw' src={Bottom} ml='auto' mr='auto'/>
             </div>
         </Center>
     );

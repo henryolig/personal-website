@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Greeting from './components/Greeting'
 import { Center } from '@chakra-ui/layout';
-import { Container, Divider, Hide, Image, Slide, Text } from '@chakra-ui/react'
+import { Container, Divider, Hide, Image, Img, Slide, Text } from '@chakra-ui/react'
 import Rside from './images/right.png'
 import Lside from './images/left.png'
 // import Sides from './images/sides.png'
@@ -77,11 +77,11 @@ const App = () => {
     return (
       <div className='home' color='#eeffff'>
         <Hide below='lg'>
-          <Image onClick={() => toggleMode()} overflow='hidden' src={Lside} mr='auto' w='35vw' h='100vh' />
+          <Img onClick={() => toggleMode()} overflow='hidden' src={Lside} mr='auto' w='35vw' h='100vh' />
         </Hide>
         <Greeting></Greeting>
         <Hide below='lg'>
-          <Image overflow='hidden' src={Rside} ml='auto' w='35vw' h='100vh' />
+          <Img overflow='hidden' src={Rside} ml='auto' w='35vw' h='100vh' />
         </Hide>
       </div>
     );
